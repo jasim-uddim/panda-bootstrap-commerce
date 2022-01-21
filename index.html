@@ -12,11 +12,12 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- strat header -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header id="Home">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#"
             ><img src="images/logo.png" alt=""
@@ -35,16 +36,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#Home"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">shoes</a>
+                <a class="nav-link" href="#shoes">shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">bagpecks</a>
+                <a class="nav-link" href="#bagpecks">bagpecks</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">subscribe</a>
+                <a class="nav-link" href="#subscribe">subscribe</a>
               </li>
             </ul>
           </div>
@@ -60,7 +63,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div
-                class="row d-flex align-items-center bg-info bg-gradient p-5"
+                class="row d-flex align-items-center panda-bg-info bg-gradient p-5"
               >
                 <div class="col-lg-7">
                   <h1>Cool Dude Headphone</h1>
@@ -69,7 +72,7 @@
                     want to waste time in front of funky world.
                   </p>
                   <h1>$420</h1>
-                  <button class="btn btn-warning">buy now</button>
+                  <button class="btn btn-buy-now">buy now</button>
                 </div>
                 <div class="col-lg-5">
                   <img
@@ -82,7 +85,7 @@
             </div>
             <div class="carousel-item">
               <div
-                class="row d-flex align-items-center bg-info bg-gradient p-5"
+                class="row d-flex align-items-center panda-bg-info bg-gradient p-5"
               >
                 <div class="col-lg-7">
                   <h1>Mega LCD TV For Sports</h1>
@@ -91,7 +94,7 @@
                     waste time in front of tv.
                   </p>
                   <h1>$1200</h1>
-                  <button class="btn btn-warning">buy now</button>
+                  <button class="btn btn-buy-now">buy now</button>
                 </div>
                 <div class="col-lg-5">
                   <img
@@ -104,7 +107,7 @@
             </div>
             <div class="carousel-item">
               <div
-                class="row d-flex align-items-center bg-info bg-gradient p-5"
+                class="row d-flex align-items-center panda-bg-info bg-gradient p-5"
               >
                 <div class="col-lg-7">
                   <h1>X-Box for your living room</h1>
@@ -113,7 +116,7 @@
                     to waste time in front of fake sports.
                   </p>
                   <h1>$600</h1>
-                  <button class="btn btn-warning">buy now</button>
+                  <button class="btn btn-buy-now">buy now</button>
                 </div>
                 <div class="col-lg-5">
                   <img
@@ -148,11 +151,11 @@
     </header>
     <main>
       <!-- categorice  -->
-      <section class="container my-5">
+      <section class="container my-5 categorice">
         <div class="row g-2">
           <div class="col-lg-4">
             <div
-              class="d-flex align-items-center justify-content-between p-3 rounded border bg-info"
+              class="d-flex align-items-center justify-content-between p-3 rounded border bg-warning"
             >
               <div class="text-white">watch</div>
               <img src="images/categories/watch.png" alt="" />
@@ -168,7 +171,7 @@
           </div>
           <div class="col-lg-4">
             <div
-              class="d-flex align-items-center justify-content-between p-3 rounded border bg-warning"
+              class="d-flex align-items-center justify-content-between p-3 rounded border bg-info"
             >
               <div class="text-white">shoes</div>
               <img src="images/categories/shoes.png" alt="" />
@@ -177,7 +180,7 @@
         </div>
       </section>
       <!-- card section strat -->
-      <section class="container my-5">
+      <section class="container my-5" id="shoes">
         <h1>shoes</h1>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
@@ -196,7 +199,7 @@
                 <h5>$120</h5>
               </div>
               <div class="m-3">
-                <button class="btn btn-warning">buy now</button>
+                <button class="btn btn-buy-now">buy now</button>
               </div>
             </div>
           </div>
@@ -216,7 +219,7 @@
                 <h5>$350</h5>
               </div>
               <div class="m-3">
-                <button class="btn btn-warning">buy now</button>
+                <button class="btn btn-buy-now">buy now</button>
               </div>
             </div>
           </div>
@@ -237,15 +240,15 @@
                 <h5>$320</h5>
               </div>
               <div class="m-3">
-                <button class="btn btn-warning">buy now</button>
+                <button class="btn btn-buy-now">buy now</button>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- backpack -->
-      <section class="container my-5">
-        <h1>backpack</h1>
+      <section class="container my-5" id="bagpecks">
+        <h1>bagpecks</h1>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           <div class="col">
             <div class="card border-0 shadow-lg h-100">
@@ -259,7 +262,7 @@
                 </p>
               </div>
               <div class="m-3">
-                <button class="btn btn-warning">buy now</button>
+                <button class="btn btn-buy-now">buy now</button>
               </div>
             </div>
           </div>
@@ -275,7 +278,7 @@
                 </p>
               </div>
               <div class="m-3">
-                <button class="btn btn-warning">buy now</button>
+                <button class="btn btn-buy-now">buy now</button>
               </div>
             </div>
           </div>
@@ -292,13 +295,37 @@
                 </p>
               </div>
               <div class="m-3">
-                <button class="btn btn-warning">buy now</button>
+                <button class="btn btn-buy-now">buy now</button>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- subscribe -->
+      <section
+        style="height: 400px"
+        class="container rounded panda-bg-info d-flex justify-content-center align-items-center my-5"
+        id="subscribe"
+      >
+        <div>
+          <h1>LET'S STAY IN TOUCH</h1>
+          <p>Get updates on sales, specials and more</p>
+          <input
+            class="form-control"
+            type="text"
+            aria-placeholder="enter your email"
+          /><br />
+          <button class="btn btn-buy-now">SUBMIT</button>
+        </div>
+      </section>
     </main>
+    <footer>
+      <p class="text-center">
+        <small
+          >©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small
+        >
+      </p>
+    </footer>
     <!-- Bootstrap script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
